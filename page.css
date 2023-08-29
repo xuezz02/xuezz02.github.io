@@ -3,7 +3,7 @@ body {
 	background-image: url(bg.jpg);
 	font-size: 12px;
 	line-height: 25px;
-	color: #333;
+	color: black;
 }
 .nav {
 	border-bottom-width: 1px;
@@ -17,23 +17,25 @@ body {
 	color: #000;
 }
 a {
+	color: black;
 	font-size: 14px;
+	font-family: "宋体";
 }
 a:link {
-	color: #333;
+	color: blue;
 	text-decoration: none;
 }
 a:visited {
-	text-decoration: none;
-	color: #333;
+	text-decoration: underline;
+	color: purple;
 }
 a:hover {
-	text-decoration: none;
-	color: #FFF;
+	text-decoration: underline;
+	color: blue;
 }
 a:active {
-	text-decoration: none;
-	color: #333;
+	text-decoration: line-through;
+	color: blue;
 }
 .title {
 	border-bottom-width: 1px;
@@ -44,4 +46,5 @@ a:active {
 	border-left-color: #200F15;
 	padding-left: 10px;
 	color: #AD5A5A;
+}
 }
