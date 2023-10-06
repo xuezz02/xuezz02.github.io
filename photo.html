@@ -5,6 +5,26 @@
 <style type="text/css"></style>
 </head>
 <body>
+<style>
+   .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+   }
+ 
+   .modal-image {
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+      margin: auto;
+      margin-top: 5%;
+   }
+</style>
 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="nav">
   <tr>
     <td><img src="photo.jpg"  height="100" /></td>
@@ -21,10 +41,199 @@
   <tr>
     <td><table width="760" border="0" cellspacing="10" cellpadding="0">
       <tr>
-        <td>
-	<p >这部分暂时还没做出来，打算之后做一个外出旅行的相册</p>
-	<p >还没开始，所以可以期待一下</p>
+        <td width="80" valign="top">
+	2020年9月刚刚入校时的清华园
 	</td>
+<td>
+	<img src="THU/THU1.jpg" width="200" height="150" alt="图像" onclick="showModal(this)">
+	<img src="THU/THU5.jpg" width="200" height="150" alt="图像" onclick="showModal(this)">	
+	</br>
+	<img src="THU/THU2.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">	
+	<img src="THU/THU3.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="THU/THU4.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	</td>
+      </tr> 
+	<tr>
+        <td width="80" valign="top">
+	2021年过年去云南，第一次坐飞机，还是疫情时候
+	</td>
+<td>
+	<img src="YN/yunnan1.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="YN/yunnan2.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">	
+	<img src="YN/yunnan3.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">	
+	<img src="YN/yunnan4.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+</br>
+	<img src="YN/yunnan5.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="YN/yunnan6.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">	
+	<img src="YN/yunnan7.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">	
+	<img src="YN/yunnan8.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+</br>
+	<img src="YN/yunnan9.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="YN/yunnan10.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">	
+	<img src="YN/yunnan11.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">	
+	<img src="YN/yunnan12.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+</br>
+	</td>
+      </tr>
+	<tr>
+        <td width="80" valign="top">
+	2021年暑假在北京自己闲逛，当时人少去了不少地方，后续在国庆又去了长城、天坛，期间第一次坐缆车也是惊恐万分，最后单独给北大的一塔一湖来个特写
+	</td>
+<td>
+	<img src="BJ/beijing1.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="BJ/beijing2.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">	
+	<img src="BJ/beijing3.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">	
+	<img src="BJ/beijing4.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+</br>
+	<img src="BJ/beijing5.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="BJ/beijing6.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="BJ/beijing7.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="BJ/beijing8.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+</br>
+	<img src="BJ/beijing9.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="BJ/beijing10.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="BJ/beijing11.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="BJ/beijing12.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+<br>
+	<img src="BJ/beijing13.jpg" width="600" height="400" alt="图像" onclick="showModal(this)">
+</td>
+      </tr>
+<tr>
+        <td width="80" valign="top">
+	2021年7月中间去了天津，著名景点天津之眼还可以
+	</td>
+<td>
+	<img src="TJ/tianjin1.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="TJ/tianjin2.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">	
+	<img src="TJ/tianjin3.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">	
+	
+</td>
+      </tr>
+<tr>
+        <td width="80" valign="top">
+	2021年暑假、寒假回家时所拍，广灵的风景还是不错的
+	</td>
+<td>
+	<img src="GL/guangling1.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="GL/guangling2.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	</br>
+	<img src="GL/guangling3.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="GL/guangling4.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">	
+</td>
+      </tr>
+
+<tr>
+        <td width="80" valign="top">
+	2022年寒假回校后再去颐和园，以及国庆的蟒山和天安门升旗，一天下来走了不少路
+	</td>
+<td>
+	<img src="BJ2/beijing14.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="BJ2/beijing15.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	</br>
+	<img src="BJ2/beijing16.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="BJ2/beijing17.jpg" width="100" height="200" alt="图像" onclick="showModal(this)">	
+</td>
+      </tr>
+
+<tr>
+        <td width="80" valign="top">
+	2023年寒假回家，一家人一起去大同玩，古城和石窟
+	</td>
+<td>
+	<img src="DT/datong1.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="DT/datong2.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	</br>
+	<img src="DT/datong3.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">	
+</td>
+      </tr>
+
+<tr>
+        <td width="80" valign="top">
+	2023年五一一个人去爬泰山
+	</td>
+<td>
+	<img src="TS/taishan1.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="TS/taishan2.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	</br>
+	<img src="TS/taishan3.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="TS/taishan4.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	</br>
+	<img src="TS/taishan5.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="TS/taishan6.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="TS/taishan7.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	<img src="TS/taishan8.jpg" width="150" height="200" alt="图像" onclick="showModal(this)">
+	</br>
+	<img src="TS/taishan9.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="TS/taishan10.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	</br>
+	<img src="TS/taishan11.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="TS/taishan12.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	</br>
+	<img src="TS/taishan13.jpg" width="200" height="150" alt="图像" onclick="showModal(this)">
+	<img src="TS/taishan14.jpg" width="200" height="150" alt="图像" onclick="showModal(this)">
+	<img src="TS/taishan15.jpg" width="100" height="150" alt="图像" onclick="showModal(this)">
+	</br>
+	<img src="TS/taishan16.jpg" width="200" height="150" alt="图像" onclick="showModal(this)">
+	<img src="TS/taishan17.jpg" width="200" height="150" alt="图像" onclick="showModal(this)">
+	<img src="TS/taishan18.jpg" width="100" height="150" alt="图像" onclick="showModal(this)">
+</td>
+      </tr>
+
+<tr>
+        <td width="80" valign="top">
+	2023年暑期实习，上海外滩和博物馆
+	</td>
+<td>
+	<img src="SH/shanghai1.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="SH/shanghai2.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	</br>
+	<img src="SH/shanghai3.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="SH/shanghai4.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+</td>
+      </tr>
+
+<tr>
+        <td width="80" valign="top">
+	2023年暑期实习，苏州姑苏区与吴中区
+	</td>
+<td>
+	<img src="SZ/suzhou1.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="SZ/suzhou2.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	</br>
+	<img src="SZ/suzhou3.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="SZ/suzhou4.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	</br>
+	<img src="SZ/suzhou5.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="SZ/suzhou6.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+</td>
+      </tr>
+
+<tr>
+        <td width="80" valign="top">
+	2023年保研结束，太原晋阳湖
+	</td>
+<td>
+	<img src="TY/taiyuan1.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="TY/taiyuan2.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+</td>
+      </tr>
+
+<tr>
+        <td width="80" valign="top">
+	2023年十一假期去广州
+	</td>
+<td>
+	<img src="GZ/guangzhou1.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="GZ/guangzhou2.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	</br>
+	<img src="GZ/guangzhou3.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	<img src="GZ/guangzhou4.jpg" width="300" height="200" alt="图像" onclick="showModal(this)">
+	</br>
+	<img src="GZ/guangzhou5.jpg" width="200" height="150" alt="图像" onclick="showModal(this)">
+	<img src="GZ/guangzhou6.jpg" width="200" height="150" alt="图像" onclick="showModal(this)">
+	<img src="GZ/guangzhou7.jpg" width="100" height="150" alt="图像" onclick="showModal(this)">
+	<img src="GZ/guangzhou8.jpg" width="100" height="150" alt="图像" onclick="showModal(this)">
+</td>
       </tr>
 
 </table></td>
